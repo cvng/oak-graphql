@@ -38,7 +38,7 @@ export const withFilter = (asyncIteratorFn: ResolverFn, filterFn: FilterFn): Res
       throw(error: any) {
         return asyncIterator.throw(error);
       },
-      [$$asyncIterator]() {
+      [$$asyncIterator as any]() {
         return this;
       },
     };
