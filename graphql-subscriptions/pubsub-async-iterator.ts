@@ -68,7 +68,7 @@ export class PubSubAsyncIterator<T> implements AsyncIterator<T> {
     return Promise.reject(error);
   }
 
-  public [$$asyncIterator]() {
+  public [$$asyncIterator as any]() {
     return this;
   }
 
